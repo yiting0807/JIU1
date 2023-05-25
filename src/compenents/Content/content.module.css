@@ -1,0 +1,236 @@
+.activity{
+    display: grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows:50% 50%;
+    margin-top: 200px;
+    width:100%; 
+    height:1200px;
+}
+
+.left{
+    background-color: #891F24;
+    width:500px;
+    height:500px;
+    margin: 0 auto;
+}
+
+.img{
+    width:550px;
+    height:500px;
+    position: absolute;
+    z-index:5;
+    left:120px;
+}
+
+.img1{
+    width:550px;
+    height:500px;
+    position: absolute;
+    z-index:5;
+    right:0px;
+}
+
+
+.dec{
+    width:500px;
+    z-index:1;
+    position: absolute;
+    left:-20px;
+    top:300px;
+}
+.dec2{
+    width:450px;
+    height:300px;
+    z-index:1;
+    position: absolute;
+    top:200px;
+    right:0px;
+}
+
+.dec3{
+    width:228px;
+    height:20px;
+    z-index:10;
+    position: absolute;
+    top:33px;
+    right:12px;
+}
+
+.actimg{
+    position: relative
+}
+
+.actword{
+    margin:auto;
+}
+
+.title{
+    color:#891F24;
+    font-weight:bolder;
+    font-size: 48px;
+}
+
+.word{
+    font-size: 20px;
+    font-weight:medium;
+    color:#5F432C;
+    font-family: Gentium;
+    /* margin-top: 80px;
+    margin-left: -200px; */
+}
+
+.button{
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right:20px;
+    border-radius: 40px;
+    border-color:#891F24 ;
+    color:#891F24;
+    background-color: #FFF4E2;
+}
+
+:hover.button{
+    color:#FFF4E2;
+    background-color: #891F24;
+}
+
+
+/*品牌故事*/
+.a{
+    height:900px;
+}
+
+.story{
+    background-image: url( ' images/brandbg.jpg ' );
+    width:1280px;
+    height:900px;
+    z-index:8;
+    position:absolute;
+}
+
+.brandtitle{
+    font-family: Gentium;
+    font-weight: bold;
+    color:#FFF4E2;
+    font-size: 100px;
+    padding-top: 230px;
+    
+}
+
+.brandredbg{
+    background-color:#891F24;
+    opacity: 0.5;
+    position: relative;
+    width:1100px;
+    height:800px;
+    z-index: 10;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+.brandword{
+    color:#FFF4E2;
+    font-size: 20px
+}
+
+.learnmore{
+    margin:100px 500px;
+    width:100px;
+    height:50px;
+    border-style:solid;
+    border-color: #FFF4E2;
+}
+
+:hover.learnmore{
+    background-color:#5F432C;
+    filter:drop-shadow(0px 0px 5px #ffffff);
+    scale:1.2;
+}
+
+.lmword{
+    color:#FFF4E2;
+    padding-top:15px;
+}
+
+
+/*調酒專區*/
+.b{
+    background-color: #FFF4E2;
+    height:900px;
+    margin-top: 50px;
+}
+
+.jiu{
+    width:200px;
+    height:200px;
+    margin-top: 50px;
+    margin-left: -90px;
+    position: absolute;
+    z-index: 8px;
+}
+
+.seveneleven{
+   display: grid;
+   grid-template-columns:1fr 1fr 1fr;
+}
+
+.title2{
+    color:#891F24;
+    font-weight:bolder;
+    font-size: 48px;
+    padding-top: 100px;
+}
+
+
+.circle1{
+    width:300px;
+    height:300px; 
+    border-radius:999em;
+    background-image: linear-gradient(to right, #cdffd8, #94b9ff);
+    margin: 0 auto;
+}
+
+.circle2{
+    width:300px;height:300px; 
+    border-radius:999em;
+    background-image: linear-gradient(to right, #0cc0df, #ffde59);
+    margin: 0 auto;
+    
+}   
+
+.circle3{
+    width:300px;height:300px; 
+    border-radius:999em;
+    background-image: linear-gradient(to right, #ff66c4, #ffde59);
+    margin: 0 auto;
+    
+}
+
+.seemore{
+    opacity: 0;
+    transition: 0.5s;
+    padding:10px 0;
+    transform:rotateX('-90deg');
+    width:300px;
+    height:300px; 
+    border-radius:999em;
+    color:#ffffff;
+    z-index: 10px;
+    position: absolute; 
+}
+
+
+:hover.seemore{
+    transform:rotateX('0deg');
+    opacity: 1;
+    background-color: rgba(137,31,36,0.4);
+}
+
+.cocktail{
+    width:32px;
+    height:32px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
