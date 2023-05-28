@@ -1,5 +1,9 @@
 import styles from "./square.module.css"
+import {
+    BrowserRouter,Routes,Route,Link
+  } from 'react-router-dom' 
 
+  
 export default function Square(){
 
 return(
@@ -7,7 +11,7 @@ return(
 <div className={styles.square}>
            
         <div className={styles.container}>
-            <img className={styles.img} src="images/whisky.jpg" alt="whisky"/>
+        <Link to='/Product'> <img className={styles.img} src="images/whisky.jpg" alt="whisky"/></Link>
             <h1 className={styles.chiword}>威士忌</h1>
             <h2 className={styles.engword}>Whisky</h2>
         </div>   

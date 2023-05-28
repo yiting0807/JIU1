@@ -1,6 +1,4 @@
-
-
-  .square{
+.square{
     display:grid;
     margin-top: 200px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -18,6 +16,7 @@
 
   :hover.img{
     opacity: 1;
+    
   }
  .container{
     position: relative;
@@ -29,7 +28,9 @@
     left:100px;
     top:20px;
     font-weight:bold;
+   
    }
+   
    
    .engword{
     position: absolute;

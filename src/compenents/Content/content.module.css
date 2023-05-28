@@ -21,7 +21,7 @@
     z-index:5;
     left:120px;
 }
-
+ 
 .img1{
     width:550px;
     height:500px;
@@ -37,7 +37,19 @@
     position: absolute;
     left:-20px;
     top:300px;
+    animation:  moveToRight 3s ;
+    animation-delay: 10ms;
 }
+
+@keyframes moveToRight {
+    0% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
 .dec2{
     width:450px;
     height:300px;
@@ -45,6 +57,16 @@
     position: absolute;
     top:200px;
     right:0px;
+    animation:  moveToLeft 3s ;
+}
+
+@keyframes moveToLeft{
+    0% {
+        transform: translateX(1000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
 }
 
 .dec3{
@@ -54,6 +76,16 @@
     position: absolute;
     top:33px;
     right:12px;
+    animation:  moveToLeft2 5s ;
+}
+
+@keyframes moveToLeft2{
+    0% {
+        transform: translateX(1000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
 }
 
 .actimg{
@@ -162,10 +194,10 @@
 }
 
 .jiu{
-    width:200px;
-    height:200px;
-    margin-top: 50px;
-    margin-left: -90px;
+    width:250px;
+    height:250px;
+    margin-top: 30px;
+    margin-left: -120px;
     position: absolute;
     z-index: 8px;
 }
@@ -180,6 +212,7 @@
     font-weight:bolder;
     font-size: 48px;
     padding-top: 100px;
+    font-family: Gentium;
 }
 
 
@@ -232,5 +265,9 @@
     height:32px;
     margin-top: 100px;
     margin-bottom: 30px;
+    transition:all 2s;
 }
 
+:hover.cocktail{
+   transform:rotate(180deg);
+}

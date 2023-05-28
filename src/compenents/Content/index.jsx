@@ -1,18 +1,37 @@
 import styles from "./content.module.css"
+import {
+  BrowserRouter,Routes,Route,Link
+} from 'react-router-dom' 
+import {motion} from 'framer-motion'
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Content(){
+ 
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
+
     return(
       <div>
 
       
-        <div className={styles.activity}>
+        <div data-aos="fade-right" data-aos-duration="3000" className={styles.activity}>
+
 
             <div className={styles.actimg}>
               <img className={styles.img} src="images/1.png" alt="activity"/>
               <img className={styles.dec} src="images/red.png" alt="red"/>
            </div>
 
-           <div className={styles.actword}>
+           <motion.div className={styles.actword}
+             initial={{opacity:0,x:-100}}
+             animate={{opacity:1,x:0}}
+             transition={{duration:1}}
+           >
               <p className={styles.title}>台北國際酒展</p> 
               <p className={styles.word}>
                 台北國際酒展<br></br><br></br>
@@ -21,9 +40,15 @@ export default function Content(){
               時間:2023.12.11~12.14
               </p>
               <button className={styles.button}>查看更多</button>
-           </div>
+           </motion.div>
 
-           <div className={styles.actword}>
+
+
+           <motion.div className={styles.actword}
+             initial={{opacity:0,x:-100}}
+             animate={{opacity:1,x:0}}
+             transition={{duration:1}}
+           >
               <p className={styles.title}>超‧微醺趴</p> 
               <p className={styles.word}>
                  5大酒款 + 5感新體驗　<br></br>顛覆品酒 嶄新享受！ <br></br><br></br>
@@ -32,7 +57,7 @@ export default function Content(){
                  時間:2024.1.5
               </p>
               <button className={styles.button}>查看更多</button>
-           </div>
+           </motion.div>
 
            <div className={styles.actimg}>
               <img className={styles.img1} src="images/activity2.png" alt="activity"/>
@@ -41,7 +66,9 @@ export default function Content(){
            </div> 
         </div>
 
-        <div className={styles.a}>
+
+
+        <div data-aos="fade-down" data-aos-duration="3000" className={styles.a}>
           <div className={styles.story}>
             <div className={styles.brandredbg}>
                   <p className={styles.brandtitle}>ABOUT US</p>
@@ -51,7 +78,7 @@ export default function Content(){
                   </p>
 
                   <div className={styles.learnmore}>
-                     <p className={styles.lmword}>了解更多</p>
+                   <Link to='/Aboutus'><p className={styles.lmword}>了解更多</p></Link> 
                   </div>
             </div>
         </div>
@@ -59,37 +86,37 @@ export default function Content(){
         </div>
         
         <div className={styles.b}>
-           <p className={styles.title2}>超商特調</p>
+           <p className={styles.title2}>BARTENDING</p>
 
           <div className={styles.seveneleven}>
          
-            <div className={styles.circle1}>
+          <Link to='/Bartending'>
+          <div data-aos="flip-left" data-aos-duration="3000"className={styles.circle1}>
                <img className={styles.jiu} src="images/jiu1.png" alt="jiu1"/>
 
                <div className={styles.seemore}>
                  <img className={styles.cocktail} src="images/cocktail.png" alt="activity"/>
-                 <p>click see more</p> 
+                 <p>view more</p> 
                </div>
-
             </div>
-
+          </Link>
              
-             <div className={styles.circle2}>
+             <div data-aos="flip-left" data-aos-duration="3000"className={styles.circle2}>
                <img className={styles.jiu} src="images/jiu2.png" alt="jiu1"/>
 
                <div className={styles.seemore}>
                  <img className={styles.cocktail} src="images/cocktail.png" alt="activity"/>
-                 <p>click see more</p> 
+                 <p>view more</p> 
                </div>
 
              </div>
 
-             <div className={styles.circle3}>
+             <div data-aos="flip-left" data-aos-duration="3000"className={styles.circle3}>
                   <img className={styles.jiu} src="images/jiu3.png" alt="jiu1"/>  
              
                <div className={styles.seemore}>
                  <img className={styles.cocktail} src="images/cocktail.png" alt="activity"/>
-                 <p>click see more</p> 
+                 <p>view more</p> 
                </div>
              </div>
 

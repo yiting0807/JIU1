@@ -1,6 +1,6 @@
 import styles from "./headImg.module.css"
 import { Carousel } from 'antd';
-
+import { Helmet } from "react-helmet-async"
 
 export default function HeadImg(){
    
@@ -9,29 +9,30 @@ export default function HeadImg(){
       color: '#fff',
       lineHeight: '160px',
       textAlign: 'center',
-      background: '#fff',
+      width:'100%',
+      zindex:'1',
     };
 
     return(
      <div className={styles.wrap}>
        
         <div className={styles.carousel}> 
-         
+        <Helmet><title>JIU首頁</title></Helmet>
          <Carousel autoplay>
            <div>
-              <h3 style={contentStyle}>1</h3>
+              <img style={contentStyle} src="images/carouselimg1.jpg" alt="carouselimg1"/>
            </div>
 
            <div>
-              <h3 style={contentStyle}>2</h3>
+              <img style={contentStyle} src="images/carouselimg2.JPG" alt="carouselimg2"/>
            </div>
 
            <div>
-              <h3 style={contentStyle}>3</h3>
+              <img style={contentStyle} src="images/carouselimg3.JPG" alt="carouselimg3"/>
            </div>
 
            <div>
-              <h3 style={contentStyle}>4</h3>
+              <img style={contentStyle} src="images/carouselimg4.JPG" alt="carouselimg4"/>
            </div>
          </Carousel>
 
