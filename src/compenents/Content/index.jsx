@@ -73,7 +73,9 @@ export default function Content(){
 
         <div data-aos="fade-down" data-aos-duration="3000" className={styles.a}>
           <div className={styles.story}>
-            <div className={styles.brandredbg}>
+            <div className={styles.brandredbg}></div>
+
+            <div>
                   <p className={styles.brandtitle}>ABOUT US</p>
                   <p className={styles.brandword}>Life is too short to drink bad wine.<br></br><br></br>
                   愛上端起酒杯的瞬間<br></br><br></br>
@@ -83,7 +85,8 @@ export default function Content(){
                   <div className={styles.learnmore}>
                    <Link to='/Aboutus'><p className={styles.lmword}>了解更多</p></Link> 
                   </div>
-            </div>
+           </div>
+           
         </div>
 
         </div>
