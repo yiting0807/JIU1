@@ -11,7 +11,7 @@ return(
 <div className={styles.square}>
            
         <div className={styles.container}>
-        <Link to='/Product'> <img className={styles.img} src="images/whisky.jpg" alt="whisky"/></Link>
+         <img className={styles.img} src="images/whisky.jpg" alt="whisky"/>
             <h1 className={styles.chiword}>威士忌</h1>
             <h2 className={styles.engword}>Whisky</h2>
         </div>   
