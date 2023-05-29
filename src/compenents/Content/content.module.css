@@ -271,3 +271,15 @@
 :hover.cocktail{
    transform:rotate(180deg);
 }
+
+
+@media (max-width: 768px) {
+    .activity{
+        grid-template-columns:1fr;
+        grid-template-rows:1fr 1fr 1fr 1fr;
+        height:2000px;
+    }
+    
+  
+}
+ 

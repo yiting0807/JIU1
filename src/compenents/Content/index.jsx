@@ -6,6 +6,9 @@ import {motion} from 'framer-motion'
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import 'antd-button-color/dist/css/style.css'; 
+import Button from "antd-button-color";
+
 
 export default function Content(){
  
@@ -14,7 +17,7 @@ export default function Content(){
     AOS.refresh();
   }, []);
 
-
+  
     return(
       <div>
 
@@ -120,8 +123,10 @@ export default function Content(){
                </div>
              </div>
 
-         </div>
+             
 
+         </div>
+        
         </div>
         
 

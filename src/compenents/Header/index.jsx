@@ -7,11 +7,27 @@ import {
 export default function Header(){
    return(
     <div className={styles.wrap}>
+
       <header className={styles.header}>
         <Link to='/'>
          <h2 className={styles.title}> JIU</h2>
-        </Link> 
+        </Link>
+
+
+   <nav>
+     <ul className={styles.back}>
+
+      <li className={styles.block}><Link to='/Aboutus'>ABOUT US</Link></li>
+      
+
+      <li className={styles.block}><Link to='/'>ALCOLHO</Link></li>
+
+      <Link to='/Aboutus'><li className={styles.block}>PRODUCT</li></Link>  
+    </ul>
+   </nav>
+  
       </header>
+
     </div>
    )
 
