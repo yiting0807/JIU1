@@ -111,7 +111,7 @@ export default function Content(){
 
              </div>
 
-             <div data-aos="flip-left" data-aos-duration="3000"className={styles.circle3}>
+             <div data-aos="flip-left" data-aos-duration="2000"className={styles.circle3}>
                   <img className={styles.jiu} src="images/jiu3.png" alt="jiu1"/>  
              
                <div className={styles.seemore}>

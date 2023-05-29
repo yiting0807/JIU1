@@ -14,7 +14,6 @@ import {
 
 function App() {
   return (
-    // <Home/>
     <HelmetProvider context={{}}>
     <BrowserRouter>
       <Routes>
